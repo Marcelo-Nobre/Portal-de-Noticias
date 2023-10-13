@@ -17,6 +17,6 @@
         <x-tags topic="Anime"/>
         <x-tags topic="Programing"/>
     </div>
-    @include('news.layouts.most-popular')
+    @include('layouts.news._partials.most-popular')
 
 </div>

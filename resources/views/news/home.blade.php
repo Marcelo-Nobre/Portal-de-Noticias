@@ -1,5 +1,6 @@
-{{--        navbar--}} @include('news.layouts.navbar');
+@extends('layouts.news.app ')
 
+@section('content')
 <div class="container-fluid paddding mb-5">
     <div class="row mx-0">
         <div class="col-md-6 col-12 paddding animate-box" data-animate-effect="fadeIn">
@@ -133,20 +134,20 @@
     </div>
 </div>
 
-@include('news.layouts.news-horizontal')
-@include('news.layouts.news-horizontal-video')
+@include('layouts.news._partials.news-horizontal')
+@include('layouts.news._partials.news-horizontal-video')
 <div class="container-fluid pb-4 pt-4 paddding">
     <div class="container paddding">
         <div class="row mx-0">
-            @include('.news.layouts.news-vertical')
-            @include('news.layouts.tags')
+            @include('layouts.news._partials.news-vertical')
+            @include('layouts.news._partials.tags')
         </div>
         <div class="row mx-0 animate-box" data-animate-effect="fadeInUp">
             <x-paginate/>
         </div>
     </div>
 </div>
-@include('news.layouts.footer');
+@endsection
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
