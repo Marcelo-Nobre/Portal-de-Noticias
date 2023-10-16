@@ -1,22 +1,20 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\SideBar\Tags;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class NewsHorizontal extends Component
+class TagsItem extends Component
 {
-    public $title;
-    public $date;
+    public $topic;
     /**
      * Create a new component instance.
      */
-    public function __construct(string $title, string $date)
+    public function __construct(string $topic)
     {
-        $this->title = $title;
-        $this->date = $date;
+        $this->topic = $topic;
     }
 
     /**
@@ -24,6 +22,6 @@ class NewsHorizontal extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.news-horizontal');
+        return view('components.side-bar.tags.tags-item');
     }
 }

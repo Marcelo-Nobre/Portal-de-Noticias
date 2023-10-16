@@ -25,8 +25,8 @@
                             </div>
                         </div>
                         <div class="pt-2">
-                            <x-news-horizontal-video date="90 de 90"/>
-
+                           <x-horizontal-news.h-news-video.horizontal-news-video-item
+                                    title="Video Bacana para ver com sua família e amigos" date="90 de 90" />
                         </div>
                     </div>
                 </div>
@@ -50,8 +50,8 @@
                             </div>
                         </div>
                         <div class="pt-2">
-                            <x-news-horizontal-video date="90 de 90"/>
-
+                           <x-horizontal-news.h-news-video.horizontal-news-video-item
+                                    title="Video Bacana para ver com sua família e amigos" date="90 de 90" />
                         </div>
                     </div>
                 </div>
@@ -75,8 +75,8 @@
                             </div>
                         </div>
                         <div class="pt-2">
-                            <x-news-horizontal-video date="90 de 90"/>
-                        </div>
+                           <x-horizontal-news.h-news-video.horizontal-news-video-item
+                                    title="Video Bacana para ver com sua família e amigos" date="90 de 90" />                        </div>
                     </div>
                 </div>
                 <div class="item px-2">

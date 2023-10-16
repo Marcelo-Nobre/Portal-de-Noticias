@@ -7,7 +7,7 @@
     </div>
     <div class="col-md-7 animate-box">
         <a href="single.html" class="fh5co_magna py-2"> {{$title}} </a> <a href="single.html" class="fh5co_mini_time py-3">
-           {{$autor}} </a>
+           {{$author}} </a>
         <div class="fh5co_consectetur"> {{$description}}
         </div>
     </div>

@@ -1,21 +1,21 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\HorizontalNews\hNewsImage;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class Tags extends Component
+class HorizontalNewsImage extends Component
 {
-    public $topic;
 
+    public $title;
     /**
      * Create a new component instance.
      */
-    public function __construct(string $topic)
+    public function __construct(string $title)
     {
-        $this->topic = $topic;
+        $this->title = $title;
     }
 
     /**
@@ -23,6 +23,6 @@ class Tags extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.tags');
+        return view('components.horizontal-news.h-news-image.horizontal-news-image');
     }
 }

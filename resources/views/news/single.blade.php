@@ -66,30 +66,14 @@
                     ornare.
                 </p>
             </div>
-            @include('layouts.news._partials.tags')
-
+            <x-side-bar.side-bar />
         </div>
     </div>
 </div>
 <div class="container-fluid pb-4 pt-5">
     <div class="container animate-box">
-        <div>
-            <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">Trending</div>
-        </div>
-        <div class="owl-carousel owl-theme" id="slider2">
-            <x-news-horizontal title="Image boa" date="90 de 90"/>
-            <x-news-horizontal title="Image boa" date="90 de 90"/>
-            <x-news-horizontal title="Image boa" date="90 de 90"/>
-            <x-news-horizontal title="Image boa" date="90 de 90"/>
-            <x-news-horizontal title="Image boa" date="90 de 90"/>
-            <x-news-horizontal title="Image boa" date="90 de 90"/>
-            <x-news-horizontal title="Image boa" date="90 de 90"/>
-        </div>
-    </div>
+        <x-horizontal-news.h-news-image.horizontal-news-image title="Trending"/>
 </div>
 
 </body>
 @endsection
-
-
-

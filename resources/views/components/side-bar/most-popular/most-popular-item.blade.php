@@ -7,4 +7,3 @@
         <div class="most_fh5co_treding_font_123"> {{$date}}</div>
     </div>
 </div>
-

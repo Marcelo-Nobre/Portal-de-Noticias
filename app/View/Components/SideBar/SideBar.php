@@ -1,21 +1,19 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\SideBar;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class NewsHorizontalVideo extends Component
+class SideBar extends Component
 {
-
-    public $date;
     /**
      * Create a new component instance.
      */
-    public function __construct( string $date)
+    public function __construct()
     {
-        $this->date = $date;
+        //
     }
 
     /**
@@ -23,6 +21,6 @@ class NewsHorizontalVideo extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.news-horizontal-video');
+        return view('components.side-bar.side-bar');
     }
 }

@@ -1,24 +1,22 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\HorizontalNews\hNewsImage;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class NewsVertical extends Component
+class HorizontalNewsImageItem extends Component
 {
     public $title;
-    public $autor;
-    public $description;
+    public $date;
     /**
      * Create a new component instance.
      */
-    public function __construct(string $title, string $autor, string $description)
+    public function __construct(string $title, string $date)
     {
         $this->title = $title;
-        $this->autor = $autor;
-        $this->description = $description;
+        $this->date = $date;
     }
 
     /**
@@ -26,6 +24,6 @@ class NewsVertical extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.news-vertical');
+        return view('components.horizontal-news.h-news-image.horizontal-news-image-item');
     }
 }
