@@ -3,12 +3,8 @@
 <div class="container-fluid pb-4 pt-4 paddding">
     <div class="container paddding">
         <div class="row mx-0">
-            <x-vertical-news.vertical-news />
-           <x-side-bar.side-bar />
-
-        </div>
-        <div class="row mx-0">
-           <x-paginate/>
+            <x-vertical-news.vertical-news perPage="6" />
+            <x-side-bar.side-bar />
         </div>
     </div>
 </div>

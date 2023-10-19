@@ -31,4 +31,10 @@ return [
 
     'supports_credentials' => false,
 
+    'allowed_hosts' => array_filter(
+        array_map(
+            'trim', explode(',', strval(env('CORS_ALLOWED_HOSTS')))
+        )
+    ),
+
 ];

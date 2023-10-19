@@ -25,8 +25,6 @@ class News extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('layouts.news.app', [
-            'abc' => 'oi',
-        ]);
+        return view('layouts.news.app');
     }
 }

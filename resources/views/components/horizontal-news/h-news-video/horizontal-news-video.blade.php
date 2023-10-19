@@ -10,11 +10,12 @@
                         <div class="fh5co_hover_news_img_video_tag_position_relative">
                             <div class="fh5co_news_img">
                                 <iframe id="video" width="100%" height="200"
-                                        src="https://www.youtube.com/embed/aM9g4r9QUsM?rel=0&amp;showinfo=0"
-                                        frameborder="0" allowfullscreen></iframe>
+                                    src="https://www.youtube.com/embed/5rJo5pdqa2Q?rel=0&amp;showinfo=0"
+                                    frameborder="0" allowfullscreen>
+                                </iframe>
                             </div>
                             <div class="fh5co_hover_news_img_video_tag_position_absolute fh5co_hide">
-                                <img src="images/ariel-lustre-208615.jpg" alt=""/>
+                                <img src="{{ asset('images/ariel-lustre-208615.jpg') }}" alt=""/>
                             </div>
                             <div class="fh5co_hover_news_img_video_tag_position_absolute_1 fh5co_hide" id="play-video">
                                 <div class="fh5co_hover_news_img_video_tag_position_absolute_1_play_button_1">
@@ -35,11 +36,11 @@
                         <div class="fh5co_hover_news_img_video_tag_position_relative">
                             <div class="fh5co_news_img">
                                 <iframe id="video_2" width="100%" height="200"
-                                        src="https://www.youtube.com/embed/aM9g4r9QUsM?rel=0&amp;showinfo=0"
+                                        src="https://www.youtube.com/embed/5rJo5pdqa2Q?rel=0&amp;showinfo=0"
                                         frameborder="0" allowfullscreen></iframe>
                             </div>
                             <div class="fh5co_hover_news_img_video_tag_position_absolute fh5co_hide_2">
-                                <img src="images/39-324x235.jpg" alt=""/></div>
+                                <img src="{{ asset('images/39-324x235.jpg') }}" alt=""/></div>
                             <div class="fh5co_hover_news_img_video_tag_position_absolute_1 fh5co_hide_2"
                                  id="play-video_2">
                                 <div class="fh5co_hover_news_img_video_tag_position_absolute_1_play_button_1">
@@ -60,11 +61,11 @@
                         <div class="fh5co_hover_news_img_video_tag_position_relative">
                             <div class="fh5co_news_img">
                                 <iframe id="video_3" width="100%" height="200"
-                                        src="https://www.youtube.com/embed/aM9g4r9QUsM?rel=0&amp;showinfo=0"
+                                        src="https://www.youtube.com/embed/5rJo5pdqa2Q?rel=0&amp;showinfo=0"
                                         frameborder="0" allowfullscreen></iframe>
                             </div>
                             <div class="fh5co_hover_news_img_video_tag_position_absolute fh5co_hide_3">
-                                <img src="images/joe-gardner-75333.jpg" alt=""/></div>
+                                <img src="{{ asset('images/joe-gardner-75333.jpg') }}" alt=""/></div>
                             <div class="fh5co_hover_news_img_video_tag_position_absolute_1 fh5co_hide_3"
                                  id="play-video_3">
                                 <div class="fh5co_hover_news_img_video_tag_position_absolute_1_play_button_1">
@@ -84,11 +85,11 @@
                         <div class="fh5co_hover_news_img_video_tag_position_relative">
                             <div class="fh5co_news_img">
                                 <iframe id="video_4" width="100%" height="200"
-                                        src="https://www.youtube.com/embed/aM9g4r9QUsM?rel=0&amp;showinfo=0"
+                                        src="https://www.youtube.com/embed/5rJo5pdqa2Q?rel=0&amp;showinfo=0"
                                         frameborder="0" allowfullscreen></iframe>
                             </div>
                             <div class="fh5co_hover_news_img_video_tag_position_absolute fh5co_hide_4">
-                                <img src="images/vil-son-35490.jpg" alt=""/>
+                                <img src="{{ asset('images/vil-son-35490.jpg') }}" alt=""/>
                             </div>
                             <div class="fh5co_hover_news_img_video_tag_position_absolute_1 fh5co_hide_4"
                                  id="play-video_4">

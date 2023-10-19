@@ -1,21 +1,17 @@
 <?php
 
-namespace App\View\Components\VerticalNews;
+namespace App\View\Components\Layouts;
 
-use App\Models\News\News;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class VerticalNewsItem extends Component
+class NewsTopMenuList extends Component
 {
     /**
      * Create a new component instance.
      */
-    public function __construct(
-        public News $news
-    )
-    {
+    public function __construct() {
         //
     }
 
@@ -24,6 +20,6 @@ class VerticalNewsItem extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.vertical-news.vertical-news-item');
+        return view('layouts.news._partials.top-menu-list');
     }
 }

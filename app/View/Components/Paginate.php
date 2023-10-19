@@ -11,7 +11,10 @@ class Paginate extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct(
+        public ?\Illuminate\Pagination\LengthAwarePaginator $records,
+        public ?string $paginationView = 'layouts.news._partials.custom-pagination',
+    )
     {
         //
     }
