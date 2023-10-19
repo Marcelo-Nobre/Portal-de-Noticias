@@ -100,7 +100,7 @@
                             </div>
                         </div>
                         <div class="pt-2">
-                            <x-news-horizontal-video  date="90 de 90"/>
+                            <x-horizontal-news.h-news-video.horizontal-news-video-item date="90 de 90"/>
                         </div>
                     </div>
                 </div>

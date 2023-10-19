@@ -1,6 +1,5 @@
-@extends('layouts.news.app')
+<x-layouts.news>
 
-@section('content')
 <div class="container-fluid contact_us_bg_img">
     <div class="container">
         <div class="row">
@@ -83,4 +82,4 @@
         </div>
     </div>
 </div>
-@endsection
+</x-layouts.news>

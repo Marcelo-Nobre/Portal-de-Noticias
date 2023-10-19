@@ -1,14 +1,7 @@
-<!--
-	24 News by FreeHTML5.co
-	Twitter: https://twitter.com/fh5co
-	Facebook: https://fb.com/fh5co
-	URL: https://freehtml5.co
--->
-@extends('layouts.news.app')
+<x-layouts.news
+    body-class="single"
+>
 
-
-@section('content')
-<body class="single">
 <div id="fh5co-title-box"
      style="background-image: url(images/camila-cordeiro-114636.jpg); background-position: 50% 90.5px;"
      data-stellar-background-ratio="0.5">
@@ -74,6 +67,4 @@
     <div class="container animate-box">
         <x-horizontal-news.h-news-image.horizontal-news-image title="Trending"/>
 </div>
-
-</body>
-@endsection
+</x-layouts.news>
