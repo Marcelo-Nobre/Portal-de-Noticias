@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Web\News\NewsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,12 +17,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('news.home');
 })->name('home');
-Route::get('/blog', function (){
-    return view('news.blog');
-})->name('blog');
+
+Route::get('/blog', [NewsController::class, 'index'])->name('blog.index');
+Route::get('/blog/{post}', [NewsController::class, 'show'])->name('blog.show');
+
 Route::get('/contact', function (){
     return view('news.contact');
 })->name('contact');
-Route::get('/single', function (){
-    return view('news.single');
-})->name('single');
+
+
+Route::middleware(['auth'])
+    ->prefix('admin')
+    ->name('admin.')
+    ->group(function () {
+    require_once __DIR__ . '/admin.php';
+});

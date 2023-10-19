@@ -15,6 +15,7 @@ class TrustHosts extends Middleware
     {
         return [
             $this->allSubdomainsOfApplicationUrl(),
+            ...config('cors.allowed_hosts'),
         ];
     }
 }

@@ -185,9 +185,11 @@
         contentWayPoint();
 		goToTop();
 		googleTranslateFormStyling();
+        //$('[data-toggle="tooltip"]').tooltip();
 	});
-
 }());
+
 function googleTranslateElementInit() {
     new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
 }
+
