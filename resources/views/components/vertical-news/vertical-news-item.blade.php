@@ -19,8 +19,6 @@
         <div class="mb-2">
             <a href="{{ route('blog.show', 'example-post') }}">Thomas</a>
             <span class="fh5co_mini_time py-1 text-muted ml-2" title="{{ $news?->created_at?->format('c') }}">{{ $news?->created_at?->diffForHumans() }}</span>
-
-
         </div>
         <div class="fh5co_consectetur">{{ str($news->content)->limit(150) }}</div>
     </div>
