@@ -48,5 +48,15 @@
 <!-- Main -->
 <script src="{{ asset('js/main.js') }}"></script>
 
+<script>
+    document.querySelector('[data-call-action="set_locale"]')?.addEventListener('change', event => {
+        let locale = event.target.value;
+        if (!locale) {
+            return;
+        }
+
+        window.location = "{{ route('set-language') }}?lang=" + locale;
+    })
+</script>
 </body>
 </html>

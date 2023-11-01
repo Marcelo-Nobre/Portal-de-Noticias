@@ -1,3 +1,6 @@
+@php
+    $lang = session('lang', 'en');
+@endphp
 <div class="container-fluid fh5co_header_bg">
     <div class="container">
         <div class="row">
@@ -48,11 +51,9 @@
                 <!--<div class="d-inline-block text-center"><img src="{{ asset('images/country.png') }}" alt="img" class="fh5co_country_width"/></div>-->
 
                 <div class="d-inline-block text-center dd_position_relative ">
-                    <select class="form-control fh5co_text_select_option">
-                        <option>English</option>
-                        <option>French</option>
-                        <option>German</option>
-                        <option>Spanish</option>
+                    <select class="form-control fh5co_text_select_option" data-call-action="set_locale">
+                        <option {{ $lang == 'en' ? 'selected' : '' }} value="en">English</option>
+                        <option {{ $lang == 'pt_BR' ? 'selected' : '' }} value="pt_BR">Português</option>
                     </select>
                 </div>
                 <div class="clearfix"></div>

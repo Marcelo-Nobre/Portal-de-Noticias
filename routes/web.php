@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\Web\News\SetLanguageController;
 use App\Http\Controllers\Web\News\NewsController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,10 +27,11 @@ Route::get('/contact', function (){
     return view('news.contact');
 })->name('contact');
 
-
 Route::middleware(['auth'])
     ->prefix('admin')
     ->name('admin.')
     ->group(function () {
     require_once __DIR__ . '/admin.php';
 });
+
+Route::get('/set-language/{lang?}', SetLanguageController::class)->name('set-language');
