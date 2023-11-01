@@ -4,16 +4,9 @@
     </div>
     <div class="clearfix"></div>
     <div style="display: flex; flex-wrap: wrap;">
-        <x-side-bar.tags.tags-item topic="Video"/>
-        <x-side-bar.tags.tags-item topic="Image"/>
-        <x-side-bar.tags.tags-item topic="Book"/>
-        <x-side-bar.tags.tags-item topic="Bootcamp"/>
-        <x-side-bar.tags.tags-item topic="Aula"/>
-        <x-side-bar.tags.tags-item topic="EBook"/>
-        <x-side-bar.tags.tags-item topic="GameHouse"/>
-        <x-side-bar.tags.tags-item topic="News"/>
-        <x-side-bar.tags.tags-item topic="Blogs"/>
-        <x-side-bar.tags.tags-item topic="Formaturas"/>
-        <x-side-bar.tags.tags-item topic="Anime"/>
-        <x-side-bar.tags.tags-item topic="Programing"/>
+        <div class="fh5co_tags_all">
+        @foreach ($latestTags as $tag)
+            <a href="{{ route('blog.index', ['tag' => $tag?->slug]) }}" class="fh5co_tagg">{{ $tag?->name }}</a>
+        @endforeach
+        </div>
     </div>

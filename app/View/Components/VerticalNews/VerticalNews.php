@@ -15,13 +15,31 @@ class VerticalNews extends Component
      * Create a new component instance.
      */
     public function __construct(
-        ?int $perPage = null
+        ?int $perPage = null,
+        ?string $tag = null,
     ) {
         $perPage ??= request()->get('perPage', 5);
+        $tag ??= request()->get('tag');
+        $tag = is_string($tag) && trim($tag) ? trim($tag) : null;
 
         $perPage = is_numeric($perPage) && $perPage > 1 && $perPage <= 20 ? intval($perPage) : 5;
+        $lang = config('app.locale');
 
-        $this->latestNews = News::orderBy('id', 'DESC')->paginate($perPage);
+        $query = News::orderBy('id', 'DESC')
+            ->with([
+                'tags' => function ($query) use ($tag, $lang) {
+                    $query->select('name', 'slug')->limit(4);
+                },
+            ])
+            ->whereHas('tags', function ($subQuery) use ($tag, $lang) {
+                $subQuery
+                    ->when(
+                        $tag,
+                        fn($subQuery2) => $subQuery2->where('slug->' . ($lang ?: 'en'), $tag)
+                    );
+            });
+
+        $this->latestNews = $query->paginate($perPage);
     }
 
     /**

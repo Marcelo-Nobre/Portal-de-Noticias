@@ -1,6 +1,11 @@
 <div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
     <div>
-        <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">News</div>
+        <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">
+            News
+            @if ($tag = request()->get('tag'))
+            <span class="text-muted">#<strong>{{ $tag }}</strong></span>
+            @endif
+        </div>
     </div>
 
     @foreach ($latestNews as $verticalNewsItem)
