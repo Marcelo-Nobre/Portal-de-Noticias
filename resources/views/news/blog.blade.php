@@ -8,9 +8,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid pb-4 pt-5">
-        <div class="container animate-box">
-                <x-horizontal-news.h-news-image.horizontal-news-image title="Trending"/>
-        </div>
-    </div>
-    </x-layouts.news>
+    <x-trendings.trending class="container-fluid pb-4 pt-5" title="ok" date="90 de 90" />
+    {{-- <x-horizontal-news.h-news-image.horizontal-news-image title="Trending"/> --}}
+
+</x-layouts.news>
