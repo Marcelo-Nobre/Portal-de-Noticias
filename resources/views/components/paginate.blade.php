@@ -1,3 +1,3 @@
 @if ($records)
-{{ $records->links($paginationView) }}
+{{ $records->withQueryString()->links($paginationView) }}
 @endif

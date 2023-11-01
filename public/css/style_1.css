@@ -558,9 +558,8 @@ a:hover {
     padding: 5px 0
 }
 
-.fh5co_tagg {
+.fh5co_tagg, .fh5co_tagg-small {
     background: #f1f1f1;
-    padding: 10px 15px;
     color: #222;
     -moz-transition: all .5s ease;
     -o-transition: all .5s ease;
@@ -568,13 +567,23 @@ a:hover {
     -ms-transition: all .5s ease;
     transition: all .5s ease;
     margin-right: 8px;
-    margin-top: 5px;
-    margin-bottom: 5px;
     display: inline-block
 }
 
+.fh5co_tagg {
+    padding: 10px 15px;
+    margin-top: 0.2rem;
+    margin-bottom: 1px;
+}
+
+.fh5co_tagg-small {
+    padding: 1px 4px;
+}
+
 .fh5co_tagg:hover,
-.fh5co_tagg:focus {
+.fh5co_tagg:focus,
+.fh5co_tagg-small:hover,
+.fh5co_tagg-small:focus {
     background: #f5bc04;
     color: #fff;
     text-decoration: none
