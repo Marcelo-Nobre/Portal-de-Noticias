@@ -1,12 +1,13 @@
 @php
-    $lang = session('lang', 'en');
+    $lang = config('app.locale', 'en');
 @endphp
 <div class="container-fluid fh5co_header_bg">
     <div class="container">
         <div class="row">
             <div class="col-12 fh5co_mediya_center"><a href="#" class="color_fff fh5co_mediya_setting"><i
                         class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp;Friday, 5 January 2018</a>
-                <div class="d-inline-block fh5co_trading_posotion_relative"><a href="#" class="treding_btn">Trending</a>
+                <div class="d-inline-block fh5co_trading_posotion_relative">
+                    <a href="#" class="treding_btn">Trending {{ $lang }}</a>
                     <div class="fh5co_treding_position_absolute"></div>
                 </div>
                 <a href="#" class="color_fff fh5co_mediya_setting">Instagram’s big redesign goes live with
@@ -52,8 +53,8 @@
 
                 <div class="d-inline-block text-center dd_position_relative ">
                     <select class="form-control fh5co_text_select_option" data-call-action="set_locale">
-                        <option {{ $lang == 'en' ? 'selected' : '' }} value="en">English</option>
-                        <option {{ $lang == 'pt_BR' ? 'selected' : '' }} value="pt_BR">Português</option>
+                        <option value="en" {{ $lang == 'en' ? 'selected' : '' }} >English</option>
+                        <option value="pt_BR" {{ $lang == 'pt_BR' ? 'selected' : '' }} >Português</option>
                     </select>
                 </div>
                 <div class="clearfix"></div>
