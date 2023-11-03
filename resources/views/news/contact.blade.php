@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <a href="#" class="fh5co_con_123"><i class="fa fa-home"></i></a>
-                <a href="#" class="fh5co_con pt-2"> Contact Us </a>
+                <a href="#" class="fh5co_con pt-2"> {{ __('Contact Us') }} </a>
             </div>
         </div>
     </div>
@@ -17,7 +17,7 @@
                             <div class="fh5co_contact_us_no_icon_div"><span><i class="fa fa-phone"></i></span></div>
                         </div>
                         <div class="col-9 align-self-center fh5co_contact_us_no_icon_difh5co_hover_2">
-                            <span class="c_g d-block">Call Us</span>
+                            <span class="c_g d-block">{{ __('Call Us') }}</span>
                             <span class="d-block c_g fh5co_contact_us_no_text">+1 800 559 658</span>
                         </div>
                         <div class="clearfix"></div>
@@ -29,7 +29,7 @@
                             <div class="fh5co_contact_us_no_icon_div"><span><i class="fa fa-envelope"></i></span></div>
                         </div>
                         <div class="col-9 align-self-center fh5co_contact_us_no_icon_difh5co_hover_2">
-                            <span class="c_g d-block">Have any questions?</span>
+                            <span class="c_g d-block">{{ __('Have any questions?') }}</span>
                             <span class="d-block c_g fh5co_contact_us_no_text">News@example.com</span>
                         </div>
                         <div class="clearfix"></div>
@@ -41,7 +41,7 @@
                             <div class="fh5co_contact_us_no_icon_div"><span><i class="fa fa-map-marker"></i></span></div>
                         </div>
                         <div class="col-9 align-self-center fh5co_contact_us_no_icon_difh5co_hover_2">
-                            <span class="c_g d-block">Address</span>
+                            <span class="c_g d-block">{{ __('Address') }}</span>
                             <span class="d-block c_g fh5co_contact_us_no_text"> 123 Some Street USA</span>
                         </div>
                         <div class="clearfix"></div>
@@ -54,24 +54,24 @@
     <div class="container-fluid mb-4">
         <div class="container">
             <div class="col-12 text-center contact_margin_svnit ">
-                <div class="text-center fh5co_heading py-2">Contact Us</div>
+                <div class="text-center fh5co_heading py-2">{{ __('Contact Us') }}</div>
             </div>
             <div class="row">
                 <div class="col-12 col-md-6">
                     <form class="row" id="fh5co_contact_form">
                         <div class="col-12 py-3">
-                            <input type="text" class="form-control fh5co_contact_text_box" placeholder="Enter Your Name"/>
+                            <input type="text" class="form-control fh5co_contact_text_box" placeholder="{{ __('Enter Your Name') }}"/>
                         </div>
                         <div class="col-6 py-3">
-                            <input type="text" class="form-control fh5co_contact_text_box" placeholder="E-mail"/>
+                            <input type="text" class="form-control fh5co_contact_text_box" placeholder="{{ __('E-mail') }}"/>
                         </div>
                         <div class="col-6 py-3">
-                            <input type="text" class="form-control fh5co_contact_text_box" placeholder="Subject"/>
+                            <input type="text" class="form-control fh5co_contact_text_box" placeholder="{{ __('Subject') }}"/>
                         </div>
                         <div class="col-12 py-3">
-                            <textarea class="form-control fh5co_contacts_message" placeholder="Message"></textarea>
+                            <textarea class="form-control fh5co_contacts_message" placeholder="{{ __('Message') }}"></textarea>
                         </div>
-                        <div class="col-12 py-3 text-center"><a href="#" class="btn contact_btn">Send Message</a></div>
+                        <div class="col-12 py-3 text-center"><a href="#" class="btn contact_btn">{{ __('Send Message') }}</a></div>
                     </form>
                 </div>
                 <div class="col-12 col-md-6 align-self-center">

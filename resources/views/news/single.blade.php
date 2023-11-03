@@ -8,8 +8,8 @@
     <div class="overlay"></div>
     <div class="page-title">
         <img src="{{ asset('images/person_1.jpg') }}" alt="Free HTML5 by FreeHTMl5.co">
-        <span>January 1, 2018</span>
-        <h2>How to write interesting articles</h2>
+        <span>{{ __('common.header.date',['weekday'=>date('N') ,'day'=>date('d'), 'month'=> date('F'), 'year'=>date('Y')]) }}</span>
+        <h2>{{ __('How to write interesting articles') }}</h2>
     </div>
 </div>
 <div id="fh5co-single-content" class="container-fluid pb-4 pt-4 paddding">

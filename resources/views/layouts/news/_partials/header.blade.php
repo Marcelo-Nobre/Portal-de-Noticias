@@ -1,13 +1,16 @@
+@php
+    $lang = config('app.locale', 'en');
+@endphp
 <div class="container-fluid fh5co_header_bg">
     <div class="container">
         <div class="row">
             <div class="col-12 fh5co_mediya_center"><a href="#" class="color_fff fh5co_mediya_setting"><i
-                        class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp;Friday, 5 January 2018</a>
-                <div class="d-inline-block fh5co_trading_posotion_relative"><a href="#" class="treding_btn">Trending</a>
+                        class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp;{{ __('common.header.date', ['weekday'=>date('N') ,'day'=>date('d'), 'month'=> date('F'), 'year'=>date('Y')]) }}</a>
+                <div class="d-inline-block fh5co_trading_posotion_relative">
+                    <a href="#" class="treding_btn">{{ __('Trending') }}</a>
                     <div class="fh5co_treding_position_absolute"></div>
                 </div>
-                <a href="#" class="color_fff fh5co_mediya_setting">Instagram’s big redesign goes live with
-                    black-and-white app</a>
+                <a href="#" class="color_fff fh5co_mediya_setting">{{ __('common.header.socialMedia') }}</a>
             </div>
         </div>
     </div>
@@ -48,11 +51,9 @@
                 <!--<div class="d-inline-block text-center"><img src="{{ asset('images/country.png') }}" alt="img" class="fh5co_country_width"/></div>-->
 
                 <div class="d-inline-block text-center dd_position_relative ">
-                    <select class="form-control fh5co_text_select_option">
-                        <option>English</option>
-                        <option>French</option>
-                        <option>German</option>
-                        <option>Spanish</option>
+                    <select class="form-control fh5co_text_select_option" data-call-action="set_locale">
+                        <option value="en" {{ $lang == 'en' ? 'selected' : '' }} >English</option>
+                        <option value="pt_BR" {{ $lang == 'pt_BR' ? 'selected' : '' }} >Português</option>
                     </select>
                 </div>
                 <div class="clearfix"></div>
