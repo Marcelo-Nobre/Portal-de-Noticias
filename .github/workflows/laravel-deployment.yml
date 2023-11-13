@@ -83,8 +83,8 @@ jobs:
           port: 22
           script_stop: true
 
-      - name: Add runner IP on droplet firewall rules
-        run: bash ./ci-cd/tools/do-ctl/fw-inbound-rules-handler.sh add
+      #- name: Add runner IP on droplet firewall rules
+      #  run: bash ./ci-cd/tools/do-ctl/fw-inbound-rules-handler.sh add
 
         # - name: Account info # Exemplo de ação que pode ser executada com o DOCTL
         #   env:
@@ -121,8 +121,8 @@ jobs:
             ls -l vendor|wc -l
             echo -e ""
 
-      - name: Remove runner IP on droplet firewall rules
-        run: bash ./ci-cd/tools/do-ctl/fw-inbound-rules-handler.sh remove
+      #- name: Remove runner IP on droplet firewall rules
+      #  run: bash ./ci-cd/tools/do-ctl/fw-inbound-rules-handler.sh remove
 
       - name: Try deploy application via SSH (expect error)
         continue-on-error: true
