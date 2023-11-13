@@ -58,6 +58,9 @@ jobs:
         mkdir -p database
         touch database/database.sqlite
 
+    - name: Migrate and seed database
+      run: php artisan migrate --step --seed --force
+
     - name: Execute tests (Unit and Feature tests) via Laravel tests
       env:
         DB_CONNECTION: sqlite
