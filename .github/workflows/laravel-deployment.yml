@@ -97,6 +97,10 @@ jobs:
           envs: TEMP_BRANCH,BRANCH_NAME,PROJECT_PATH_ON_SERVER
           script: |
             whoami
+            echo -e "--------------------------------------------"
+            echo -e "----------------- ENV ----------------------"
+            echo -e $(env)
+            echo -e "--------------------------------------------"
             cd "${PROJECT_PATH_ON_SERVER}"
             echo -e "${BRANCH_NAME}"
             echo -e "${PROJECT_PATH_ON_SERVER}"
